@@ -1,0 +1,296 @@
+:root {
+	--color-iris: #4d5ae5;
+	--color-ocean: #404bbf;
+	--color-navy-blue: #2e2f42;
+	--color-green: #31d0aa;
+	--color-slate: #434455;
+	--color-light-slate: #8e8f99;
+	--color-cornflower: #e7e9fc;
+	--color-cloud: #f4f4fd;
+	--color-navy-blue-modal: #2e2f42;
+	--color-grey: #2e2f42;
+	--color-white: #ffffff;
+	--color-dairy: #fcfcfc;
+}
+
+/*=============================================
+=            Base Styles            =
+=============================================*/
+body {
+	background-color: var(--color-white);
+	color: var(--color-slate);
+	font-family: 'Roboto', sans-serif;
+}
+  /* Reset start */
+h1,h2,h3,h4,h5,h6 p {
+	margin: 0;
+}
+img {
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
+.list {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+.link {
+	color: currentColor;
+	text-decoration: none;
+}
+.button {
+	color: currentColor;
+	cursor: pointer;
+	font-family: inherit;
+}
+   /* Reset end */
+   .container {
+	width: 1158px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 14px;
+	padding-right: 14px;
+/* 
+	outline: 2px solid red;
+	outline-offset: -2px; */
+   }
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+.section {
+	padding-bottom: 120px;
+	padding-top: 120px;
+}
+/* second lvl title */
+.third-title,
+.fourth-title {
+color: var(--color-navy-blue);
+text-align: center;
+font-size: 36px;
+font-weight: 700;
+line-height: 1.1; /* 111.111% */
+letter-spacing: 0.72px;
+text-transform: capitalize;
+}
+/* third lvl title */
+.title,
+.portf-title {
+	color: var(--color-navy-blue);
+font-size: 20px;
+font-weight: 500;
+line-height: 1.2; /* 120% */
+letter-spacing: 0.02em;
+}
+.advantages-txt,
+.section-team-txt,
+.service-txt,
+.footer-txt {
+font-size: 16px;
+font-weight: 400;
+line-height: 1.5; /* 150% */
+letter-spacing: 0.02em;
+}
+
+/*=============================================
+=            Header section            =
+=============================================*/
+
+       /* Logo */
+.page-header {
+		border-bottom: 1px solid var(--color-cornflower);
+	   }
+.header-container {
+	display: flex;
+	align-items: center;
+}
+.header-logo {
+	color: var(--color-iris);
+	font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    font-weight: 800;
+    line-height: 1.16;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+	margin-right: 76px;
+}
+.dark-header-logo {
+	color: var(--color-navy-blue);
+	font-family: 'Raleway', sans-serif;
+font-size: 18px;
+font-weight: 800;
+line-height: 1.16;
+letter-spacing: 0.54px;
+text-transform: uppercase;
+}
+.site-nav-list {
+	display: flex;
+	gap: 40px;
+	padding: 20px;
+}
+     /* Navigation */
+	 .site-nav {
+		margin-right: auto;
+	 }
+.site-nav .link{
+	color: var(--color-navy-blue);
+font-size: 16px;
+font-weight: 500;
+line-height: 1.5;
+letter-spacing: 0.02em;
+}
+.site-nav .link:hover,
+.site-nav .link:focus {
+	color: var(--color-ocean);
+}
+     /* Contact */
+.tel-mail-list {
+		display: flex;
+	 }
+.header-contact {
+		margin-right: 40px;
+	 }
+.tel-mail .link {
+  color: var(--color-slate);
+}
+.tel-mail {
+	font-style: normal;
+	font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+.tel-mail .link:hover,
+.tel-mail .link:focus {
+ color: var(--color-ocean);
+}
+/*=============================================
+=            Hero Section            =
+=============================================*/
+.hero-section {
+	padding-top: 188px;
+	padding-bottom: 188px;
+	text-align: center;
+	background-color: var(--color-navy-blue);
+}
+.hero-title {
+	color: var(--color-white);
+	text-align: center;
+    font-size: 56px;   
+    font-weight: 700;
+    line-height: 1.07;
+    letter-spacing: 0.02em;
+	margin-top: 0;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 48px;
+  max-width: 496px;
+  padding-bottom: 48px;
+}
+.hero-button {
+	background-color: var(--color-iris);
+	color: var(--color-white);
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: 1.5; /* 150% */
+letter-spacing: 0.04em;
+text-align: center;
+min-width: 169px;
+border-radius: 4px;
+padding: 16px 32px;
+}
+.hero-button:hover,
+.hero-button:focus{
+background-color: var(--color-ocean);
+}
+.radio-btn {
+	background-color: var(--color-cornflower);
+	color: var(--color-iris);
+}
+.radio-btn:hover,
+.radio-btn:focus {
+	background-color: var(--color-ocean);
+	color: var(--color-white);
+}
+
+/*=============================================
+=            Advantages section            =
+=============================================*/
+.advantages-list {
+	display: flex;
+	gap: 24px;
+}
+.advantages-item {
+	width: 264px;
+}
+
+
+
+/*=============================================
+=            Team Section            =
+=============================================*/
+.section-team {
+	background-color: var(--color-cloud);
+}
+.team-card {
+	background-color: var(--color-white);
+}
+
+/*=============================================
+=            Footer            =
+=============================================*/
+.footer {
+	background-color: var(--color-navy-blue);
+}
+.logo {
+	color: var(--color-iris);
+	font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    font-weight: 800;
+    line-height: 1.16;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+
+.light-logo-txt {
+	color: var(--color-cloud);
+}
+.footer-txt {
+	color: var(--color-cloud);
+}
+
+/*=============================================
+=            Service section            =
+=============================================*/
+.service-txt {
+	color: var(--color-slate);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
