@@ -22,7 +22,7 @@ body {
 	font-family: 'Roboto', sans-serif;
 }
   /* Reset start */
-h1,h2,h3,h4,h5,h6 p {
+h1,h2,h3,h4,h5,h6, p {
 	margin: 0;
 }
 img {
@@ -49,10 +49,10 @@ img {
 	width: 1158px;
 	margin-left: auto;
 	margin-right: auto;
-	padding-left: 14px;
-	padding-right: 14px;
-/* 
-	outline: 2px solid red;
+	padding-left: 15px;
+	padding-right: 15px;
+
+	/* outline: 2px solid red;
 	outline-offset: -2px; */
    }
 .visually-hidden {
@@ -86,6 +86,7 @@ text-transform: capitalize;
 /* third lvl title */
 .title,
 .portf-title {
+	margin-bottom: 8px;
 	color: var(--color-navy-blue);
 font-size: 20px;
 font-weight: 500;
@@ -119,7 +120,7 @@ letter-spacing: 0.02em;
 	font-family: 'Raleway', sans-serif;
     font-size: 18px;
     font-weight: 800;
-    line-height: 1.16;
+    line-height: 1.17;
     letter-spacing: 0.03em;
     text-transform: uppercase;
 	margin-right: 76px;
@@ -136,12 +137,17 @@ text-transform: uppercase;
 .site-nav-list {
 	display: flex;
 	gap: 40px;
-	padding: 20px;
+
 }
      /* Navigation */
-	 .site-nav {
+.site-nav {
 		margin-right: auto;
 	 }
+.site-nav-item {
+	display: block;
+	padding-top: 24px;
+	padding-bottom: 24px;
+}
 .site-nav .link{
 	color: var(--color-navy-blue);
 font-size: 16px;
@@ -195,20 +201,21 @@ letter-spacing: 0.02em;
   margin-left: auto;
   margin-bottom: 48px;
   max-width: 496px;
-  padding-bottom: 48px;
+  /* padding-bottom: 48px; */
 }
 .hero-button {
 	background-color: var(--color-iris);
 	color: var(--color-white);
-font-size: 16px;
-font-style: normal;
-font-weight: 500;
-line-height: 1.5; /* 150% */
-letter-spacing: 0.04em;
-text-align: center;
-min-width: 169px;
-border-radius: 4px;
-padding: 16px 32px;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.5; /* 150% */
+    letter-spacing: 0.04em;
+    text-align: center;
+    min-width: 169px;
+    border-radius: 4px;
+    padding: 16px 32px;
+    border: 0;
 }
 .hero-button:hover,
 .hero-button:focus{
@@ -217,6 +224,8 @@ background-color: var(--color-ocean);
 .radio-btn {
 	background-color: var(--color-cornflower);
 	color: var(--color-iris);
+	padding: 12px 24px;
+	border: 0px;
 }
 .radio-btn:hover,
 .radio-btn:focus {
@@ -236,10 +245,37 @@ background-color: var(--color-ocean);
 }
 
 
+/*=============================================
+=            What Are We Doing            =
+=============================================*/
+.working-section {
+	padding-top: 0px;
+	padding-bottom: 120px;
+}
+.third-title {
+	margin-bottom: 72px;
+}
+.img-list {
+	display: flex;
+	gap: 24px;
+}
+
+
 
 /*=============================================
 =            Team Section            =
 =============================================*/
+.fourth-title {
+	margin-bottom: 72px;
+}
+.team-card {
+	text-align: center;
+	border-radius: 0px 0px 4px 4px;
+	box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+}
+.team-inform {
+	padding: 32px;
+}
 .section-team {
 	background-color: var(--color-cloud);
 }
@@ -252,6 +288,8 @@ background-color: var(--color-ocean);
 =============================================*/
 .footer {
 	background-color: var(--color-navy-blue);
+	padding-top: 101px;
+	padding-bottom: 100px;
 }
 .logo {
 	color: var(--color-iris);
@@ -267,16 +305,37 @@ background-color: var(--color-ocean);
 	color: var(--color-cloud);
 }
 .footer-txt {
+
 	color: var(--color-cloud);
+	max-width: 264px;
+	margin-top: 17px;
 }
 
 /*=============================================
-=            Service section            =
+=            Portfolio           =
 =============================================*/
 .service-txt {
 	color: var(--color-slate);
 }
-
+.filter-btn-list {
+	display: flex;
+	gap: 24px;
+	align-items: center;
+	justify-content: center;
+	margin-bottom: 72px;
+}
+.filter-list {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 48px 24px;
+}
+.service-item {
+	border: 1px solid var(--color-cornflower);
+flex-basis: calc((100% - (24px * 2)) / 3);
+}	
+.service-info {
+	padding: 32px 16px;
+}
 
 
 
